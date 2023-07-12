@@ -1,11 +1,19 @@
 {
-  "name": "automatedapitestsuite",
+  "name": "testproject",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "My Awesome Project",
+  "main": "my-app.js",
   "scripts": {
-    "test": "test"
+    "build": "tsc",
+    "build:watch": "npm run build --- --w",
+    "clean": "rm -rf build/*.js build/*.map",
+    "start": "node build/my-app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Thinus Barnard",
-  "license": "ISC"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.4.1"
+  }
 }
